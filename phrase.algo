@@ -1,0 +1,35 @@
+Algorithme Phases;
+Variables
+        ch:chaine de caractére;
+        i,n,cpt:entier;
+Debut
+Ecrire("Entrer votre chaine :");
+Lire(ch);
+n <-- Longueur(ch);   //le nombre de caractères.
+
+cpt <-- 0 ; i <-- 1 ;
+Tanq que (i <= n) faire
+  Tant que (i <= n) et (ch[i] = '') faire
+    i <-- i + 1
+  Fait;
+  si (i <= n) et (ch[i] <> '') alors
+       cpt <-- cpt + 1;
+  fin si;
+  Tanq que (i <= n) et (ch[i] <> '') faire
+        i <-- i + 1;
+  Fait;
+Fait;
+Ecire('Le nombre de mots est :' cpt);  //Le nombre de mots dans la phrase.
+
+pour i <-- 0 a longueur(ch)-1
+si ch[i] = 'a' ou ch[i] = 'e' ou ch[i] = 'i' ou ch[i] = 'o' ou ch[i] = 'u' ou ch[i] = 'y' alors
+   cpt <-- cpt + 1
+   Fin si
+Fin pour
+Ecire('Le nombre de voyelles est :' cpt); //Le nombre de voyelles dans la phrase.
+
+
+
+
+
+
